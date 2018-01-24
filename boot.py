@@ -1,5 +1,6 @@
-from config import secrets
 import machine
+import config
+import secrets
 
 
 def do_connect():
@@ -11,7 +12,7 @@ def do_connect():
     if not sta_if.isconnected():
         print('connecting to network...')
         sta_if.active(True)
-        sta_if.connect(secrets["ssid"], secrets["network_password"])
+        sta_if.connect(secrets.WIFI_SSID, secrets.WIFI_PASSWORD)
         while not sta_if.isconnected():
             pass
     print('network config:', sta_if.ifconfig())
@@ -22,3 +23,4 @@ if machine.reset_cause() == machine.DEEPSLEEP_RESET:
 else:
     print('power on or hard reset')
 
+do_connect()
