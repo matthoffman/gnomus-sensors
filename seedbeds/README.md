@@ -9,7 +9,7 @@ This node needs to:
 
 Phase 1: 
  1. measure water level in the tray
- 2. measure moisture level in a few select seed cups
+ 2. measure moisture level in a few select seed cups (note: means external ADC, or wiring up one moisture thing to be digital)
  3. report that back to the server, so we can water them when they're dry
  
 Phase 2: 
