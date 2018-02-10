@@ -37,8 +37,9 @@ while True:
         temp = read_temperature()
         # post it to the server
         resp = uhttp.post(config.SERVER_URL, {"id": machine.unique_id(),
-                                              "moisture": moisture,
-                                              "temp": temp})
+                                              "readings": {
+                                                  "moisture": moisture,
+                                                  "temp": temp}})
         # now maybe do something with the result?
     except Exception as e:
         print("Exception in main loop: {}".format(e))
