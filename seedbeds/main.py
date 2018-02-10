@@ -37,6 +37,7 @@ while True:
         temp = read_temperature()
         # post it to the server
         resp = uhttp.post(config.SERVER_URL, {"id": machine.unique_id(),
+                                              "version": 1,
                                               "readings": {
                                                   "moisture": moisture,
                                                   "temp": temp}})

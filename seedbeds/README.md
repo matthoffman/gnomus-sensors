@@ -127,3 +127,5 @@ And sure enough, here's what they're actually producing, when I sketched this ou
         { "foo_3": 432} ]
     }  
 ```
+
+Eh, just version the protocol and don't worry about it. Make sure to send `"version": 1` to start with.
