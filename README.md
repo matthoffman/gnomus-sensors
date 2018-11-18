@@ -1,4 +1,4 @@
-It makes me sad to have sensor-reading code copied and pasted here, but some of the sensor code for ESP8266 isn't available in a repo. So here they are.
+It makes me sad to have sensor-reading code copied and pasted here, but some of the sensor code for ESP8266 isn't available in a repo. So here they are, for now.
 
 TODO: 
 
