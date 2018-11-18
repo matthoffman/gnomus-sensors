@@ -1,3 +1,5 @@
+It makes me sad to have sensor-reading code copied and pasted here, but some of the sensor code for ESP8266 isn't available in a repo. So here they are.
+
 TODO: 
 
 - [ ] write first cut: something that stays connected, polls a thermometer and soil moisture sensor every hour, and sends the data to a given URL.
@@ -5,6 +7,3 @@ TODO:
     - [ ] bonus points: open a REPL?
 - [ ] implement deep sleep between polls
 
-
-This is an interesting project: https://github.com/craftyguy/esp-bootstrap
-Runtime updating of code, automatic connecting to the network...GPL, though, so off-limits unless this is going to be GPL.
